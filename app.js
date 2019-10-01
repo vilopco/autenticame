@@ -5,7 +5,7 @@ require("./user");
 const routes = require('./routes');
 
 
-mongoose.connect(process.env.MONGODB_URL || "mongodb://localhost:27017/registrations", { useNewUrlParser: true,useUnifiedTopology: true });
+mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/tranquil-bastion-55328', { useNewUrlParser: true,useUnifiedTopology: true });
 
 const app = express();
 app.set('view engine', 'pug');
