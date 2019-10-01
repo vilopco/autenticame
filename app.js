@@ -4,7 +4,7 @@ const cookieSession = require("cookie-session");
 require("./user");
 const routes = require('./routes');
 
-mongoose.connect(process.env.MONGODB_URI || 'mongodb://tranquil-bastion-55328.herokuapp.com', { useNewUrlParser: true,useUnifiedTopology: true });
+mongoose.connect(process.env.MONGODB_URI || 'https://tranquil-bastion-55328.herokuapp.com/', { useNewUrlParser: true,useUnifiedTopology: true });
 
 const app = express();
 app.set('view engine', 'pug');
